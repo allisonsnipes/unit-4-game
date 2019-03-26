@@ -1,0 +1,40 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/bk.jpg);
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.halfwidth {
+  width: 50%;
+}
+
+.quarterwidth {
+  width: 25%;
+}
+
+.navbar {
+  background-color: bisque;
+  height: 5em;
+  width: 10em;
+  margin:auto;
+}
+
+.navcolorheader {
+  background-color: bisque;
+} 
