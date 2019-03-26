@@ -28,7 +28,7 @@ body {
   width: 25%;
 }
 
-.navColorHeader, .col, .navbar, .instructions, img {
+.navColorHeader, .col-3, .col-6, .navbar, .instructions, img {
   background-color: bisque;
 }
 
