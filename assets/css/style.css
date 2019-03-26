@@ -28,13 +28,28 @@ body {
   width: 25%;
 }
 
-.navbar {
+.navColorHeader, .col, .navbar, .instructions, img {
   background-color: bisque;
-  height: 5em;
-  width: 10em;
-  margin:auto;
 }
 
-.navcolorheader {
-  background-color: bisque;
-} 
+.navbar {
+  height: 5em;
+  width: 10em;
+  margin: auto;
+}
+
+.row {
+  margin: 2em;
+}
+
+.col-2, .col-6, .col-10 {
+  margin: 1em;
+}
+
+img {
+  height: 6em;
+  width: 5em;
+  margin: 0;
+  padding: .5em;
+
+}
