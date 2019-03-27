@@ -2,9 +2,13 @@
 
 $(document).ready(function() {
   let total,
-      wins,
-      losses = 0;
-  let randomNumber =
+    wins,
+    losses = 0;
+  let button1 =;
+  let button1 =;
+  let button1 =;
+  let button1 =;
+  let randomNumber = randomNumber;
 });
 
 
