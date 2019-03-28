@@ -3,36 +3,28 @@
 
  //document ready function
 $(document).ready(function() {
+  startMath();
   gameStart();
   randomNumberGenerator();
   statsCalc();
 
 });
 
-//global variables defined here
+//global variables defined
 let total = 0,
     wins = 0,
     losses = 0,
-    chances = 10;
+    button1 = $(".button1"),
+    button2 = $(".button2),
+    button3 = $(".button3"),
+    button4 = $(".button4");
 
 //random number at start
 function startMath() {
   let randomNumber = Math.floor(Math.random() * 101) + 19;
-}
+  $(".randomNumber").text(`${randomNumber}`); //display random number
 
-
-//function to display generated random number (between 19 and 120)
-function gameStart() {
-  $(".randomNumberPop").html(`
-    <legend>
-      ${randomNumber}
-    </legend>
-  `);
-}
-// special button functions to generate random number for each button pressed
-function randomNumberGenerator() {
-  event.preventDefault();
-  //event listening for user clicking the crystal button
+//need to declare the crystal's random numbers at the start of the game to start
   $(".button1").on("click", event => {
 
   });
@@ -52,8 +44,17 @@ function randomNumberGenerator() {
 
   });
 }
+}
 
 
+//function to display generated random number (between 19 and 120)
+function gameStart() {
+  $(".randomNumberPop").html(`
+    <legend>
+      ${randomNumber}
+    </legend>
+  `);
+}
 
 //game logic if userNumber === random number
 if (userNumber === randomNumber) {
