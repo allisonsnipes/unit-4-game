@@ -3,33 +3,32 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: url(../images/bk.jpg);
-}
-
 .center {
   margin: auto;
   text-align: center;
 }
 
-.fullwidth {
-  width: 100%;
+.left {
+  float: left;
+  margin-right: 100%;
 }
 
-.fullwidth {
-  width: 100%;
+.right {
+  float: right;
+  margin-left: 100%;
 }
 
-.halfwidth {
-  width: 50%;
+body {
+  background-image: url(../images/bk.jpg);
 }
 
-.quarterwidth {
-  width: 25%;
-}
-
-.navColorHeader, .col-3, .col-6, .navbar, .instructions, img {
+.navColorHeader, footer, .col-sm-3, .col-md-3, .col-md-6, .navbar, .instructions, .col-sm-6, img {
   background-color: bisque;
+}
+
+.instructions {
+  padding: 1em;
+  margin-top: 1em;
 }
 
 .navbar {
@@ -38,18 +37,49 @@ body {
   margin: auto;
 }
 
-.row {
-  margin: 2em;
-}
-
-.col-2, .col-6, .col-10 {
-  margin: 1em;
-}
-
 img {
   height: 6em;
   width: 5em;
   margin: 0;
   padding: .5em;
+}
 
+.sameHeight {
+  height: 5em;
+  display: inline-block;
+  padding: 0.5em;
+  margin: 1em;
+}
+
+.box1, .box2 {
+  width: 3em;
+}
+
+
+.box1 {
+  width: 2em;
+  margin: 1em;
+  margin-right: 0em;
+}
+
+.box2 {
+  width: 2em;
+  margin: 1em;
+  margin-left: 0em;
+}
+
+fieldset {
+  text-align: left;
+  display: inline;
+  width: 10em;
+  padding: 1em;
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }

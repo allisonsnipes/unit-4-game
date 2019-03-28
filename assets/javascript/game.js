@@ -16,8 +16,7 @@ function gameStart() {
   <legend>
     ${randomNumber}
   </legend>`
-
-  );
+ );
 }
 // special button functions to generate random number for each button pressed
 function randomNumberGenerator() {
