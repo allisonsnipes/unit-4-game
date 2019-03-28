@@ -45,6 +45,7 @@
       <!-- col for random num -->
       <div class="col-sm-3 sameHeight box2 left">
           <div class="row almostLB">
+            <!-- this is where the random number is supposed to be in the dom but does not appear on load:bug -->
             <fieldset class="randomNumber">
               Random Number:
             </fieldset>
@@ -66,25 +67,25 @@
     <!-- row for the crystals buttons-->
     <div class="row">
       <div class="col-md-2">
-        <button class="button1" type="submit">
+        <button class="button" type="submit" id="button1">
           <img src="../4hw/assets/images/1.jpg">
         </button>
       </div>
 
       <div class="col-md-2">
-          <button class="button2" type="submit">
+          <button class="button" type="submit" id="button1">
             <img src="../4hw/assets/images/2.jpg">
           </button>
         </div>
 
         <div class="col-md-2">
-            <button class="button3" type="submit">
+            <button class="button" type="submit" id="button1">
               <img src="../4hw/assets/images/3.jpg">
             </button>
           </div>
 
           <div class="col-md-2">
-              <button class="button4" type="submit">
+              <button class="button" type="submit" id="button1">
                 <img src="../4hw/assets/images/4.jpg">
               </button>
             </div>
@@ -95,15 +96,17 @@
       <div class="col-sm-3 sameHeight box2 left">
         <div class="row almostLB">
           <fieldset>
-            Your total score is: <p class="totalScore"></p>
+            <!-- user's tota; score is here in this column but not working in DOM? -->
+             <p class="totalScore"></p>
           </fieldset>
         </div>
       </div>
 
       <div class="col-sm-3 sameHeight box1 right">
         <div class="row almostLB">
+          <!--here is where the random number is supposed to populate in the DOM but not working -->
           <fieldset>
-            Random Number: <p class="randomNumberPop"></p>
+            <p class="randomNumberPop"></p>
           </fieldset>
         </div>
       </div>

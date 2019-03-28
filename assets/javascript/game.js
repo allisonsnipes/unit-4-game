@@ -4,56 +4,32 @@
  //document ready function
 $(document).ready(function() {
   startMath();
-  gameStart();
-  randomNumberGenerator();
+  generateRandomCrystalNum();
   statsCalc();
-
 });
 
 //global variables defined
 let total = 0,
     wins = 0,
     losses = 0,
-    button1 = $(".button1"),
-    button2 = $(".button2),
-    button3 = $(".button3"),
-    button4 = $(".button4");
+    randomNumber = randomNumber;
 
-//random number at start
+//generate a random number on webpage load (between 19 and 120)
 function startMath() {
-  let randomNumber = Math.floor(Math.random() * 101) + 19;
-  $(".randomNumber").text(`${randomNumber}`); //display random number
-
-//need to declare the crystal's random numbers at the start of the game to start
-  $(".button1").on("click", event => {
-
-  });
-
-
-  $(".button1").on("click", function(event) {
-
-  });
-
-
-  $(".button1").on("click", function(event) {
-
-  });
-
-
-  $(".button1").on("click", function(event) {
-
-  });
-}
+  //math for generating random number
+  randomNumber = Math.floor(Math.random() * 101) + 19;
+  //display random number
+  $(".randomNumberPop").text(`${randomNumber}`);
 }
 
+function generateRandomCrystalNum() {
+  //need to declare the crystal's random numbers at the start of the game to start
+  startMath();
 
-//function to display generated random number (between 19 and 120)
-function gameStart() {
-  $(".randomNumberPop").html(`
-    <legend>
-      ${randomNumber}
-    </legend>
-  `);
+  $(".button").on("click", event => {
+    crystalRanNum = Math.floor(Math.random() * 12) + 1;
+    $(".totalScore").text(`Your score is:`+ ${crystalRanNum});
+  });
 }
 
 //game logic if userNumber === random number
