@@ -1,14 +1,14 @@
  //always place this at the start
 //  'use strict';
-console.log("hello world");
+//console.log("hello world");
 
  //document ready function
 $(document).ready(function() {
-  console.log("hello doc ready");
+  //console.log("hello doc ready");
   startMath();
   generateRandomCrystalNum();
   addingAllCrystals();
-  //restartGame();
+  restartGame();
 });
 
 //global variables defined
@@ -21,15 +21,14 @@ let wins = 0,
 function startMath() {
   //math for generating random number
   randomNumber = Math.floor(Math.random() * 102) + 18;
-  console.log(randomNumber);
-  //display random number
-  $(".randomNumber").text(`${randomNumber}`);
+  //console.log(randomNumber);
+  $(".randomNumber").text(`${randomNumber}`);  //display random number
 }
 
 function generateRandomCrystalNum() {
 //need to declare the crystal's random numbers at the start of the game to start
   $(".button").on("click", event => {
-    console.log("hello crystal random");
+   // console.log("hello crystal random");
     crystalRanNum = Math.floor(Math.random() * 12) + 1;
   });
 }
@@ -37,7 +36,7 @@ function generateRandomCrystalNum() {
 //write a function to add all the crystals together for if/else comparisions
 function addingAllCrystals() {
   $(".button").on("click", event => {
-    console.log("hello adding");
+    //console.log("hello adding");
      if (sum === 0) {
       sum = crystalRanNum;
       $(".totalScore").text(`${sum}`); //displays the crystal sum on button click
@@ -50,7 +49,7 @@ function addingAllCrystals() {
 
 //game logic if userNumber === random number
 if (sum  === randomNumber) {//function if guess is on point
-  console.log("random number works");
+  //console.log("random number works");
   wins++; //increase win number
   $(".wins").text(`${wins}`); //displays current # of wins
   $(".losses").text(`${losses}`); //displays current # of losses
