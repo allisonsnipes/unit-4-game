@@ -2,13 +2,12 @@
 //  'use strict';
 console.log("hello world");
 
-
  //document ready function
 $(document).ready(function() {
   console.log("hello doc ready");
   startMath();
   generateRandomCrystalNum();
-  // addingAllCrystals()
+  addingAllCrystals();
   // restartGame();
 });
 
@@ -17,8 +16,6 @@ let wins = 0,
     losses = 0,
     sum = 0,
     randomNumber = 0;
-
-
 
 //generate a random number on webpage load (between 19 and 120)
 function startMath() {
@@ -37,18 +34,18 @@ function generateRandomCrystalNum() {
   });
 }
 
-// //write a function to add all the crystals together for if/else comparisions
-// function addingAllCrystals() {
-//   $(".button").on("click", event => {
-//     if (sum === 0) {
-//       sum = crystalRanNum;
-//       $(".totalScore").text(`Your score is:`+ ${sum});
-//     } else {
-//       sum = sum + crystalRanNum
-//       $(".totalScore").text(`Your score is:`+ ${sum});
-//     }
-//   });
-// }
+//write a function to add all the crystals together for if/else comparisions
+function addingAllCrystals() {
+  $(".button").on("click", event => {
+    console.log("hello adding");
+     if (sum === 0) {
+      sum = crystalRanNum;
+      $(".totalScore").text(`${sum}`); //displays the crystal sum on button click
+    } else {
+      sum = sum + crystalRanNum
+      $(".totalScore").text(`${sum}`);//displays the crystal sum on button click
+   });
+  }
 
 // //game logic if userNumber === random number
 // if (crystalRanNum === randomNumber) {//function if guess is on point
