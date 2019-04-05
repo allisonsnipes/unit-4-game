@@ -54,7 +54,6 @@ function addingAllCrystals() {
       $(".losses").text(`${losses}`);
     } else {
       //logic if user guesses too high
-      prompt("Sorry chap, you guessed too high. Let's play again.");
       losses++; //increase losses
       $(".wins").text(`${wins}`);
       $(".losses").text(`${losses}`);
