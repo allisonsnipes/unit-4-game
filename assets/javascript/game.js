@@ -8,7 +8,7 @@ $(document).ready(function() {
   startMath();
   generateRandomCrystalNum();
   addingAllCrystals();
-  restartGame();
+  // restartGame();
 });
 
 //global variables defined
@@ -48,9 +48,8 @@ function addingAllCrystals() {
   }
 
 //game logic if userNumber === random number
-if (sum  === randomNumber) {//function if guess is on point
+if (sum  == randomNumber) {//function if guess is on point
   //console.log("random number works");
-  wins++; //increase win number
   $(".wins").text(`${wins}`); //displays current # of wins
   $(".losses").text(`${losses}`); //displays current # of losses
   restartGame(); //restart game}
